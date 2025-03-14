@@ -4,15 +4,16 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-  "build": "prisma generate",
-  "postinstall": "prisma generate"
-},
+    "build": "prisma generate",
+    "postinstall": "prisma generate"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.4.1",
+    "cors": "^2.8.5",
     "express": "^4.21.2"
   },
   "devDependencies": {
