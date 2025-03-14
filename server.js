@@ -3,10 +3,7 @@ import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 const app =express()
-const cors = require("cors");
 app.use(express.json())
-app.use(cors());
-
 
 app.post('/usuarios' , async (req , res)=>{
    await prisma.user.create({
